@@ -14,7 +14,7 @@ module.exports = function (controller) {
             , function (err, newMessage) {
                 if (newMessage.roomType == "group") {
                     bot.reply(message, "_Note that this is a 'Group' Space. \
-                       I will answer only if mentionned:<br/> \
+                       I will answer only if mentioned:<br/> \
                        for help, type "+ bot.enrichCommand(newMessage, "help") + "_");
                 }
             });

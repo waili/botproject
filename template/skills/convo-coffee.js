@@ -13,28 +13,28 @@ module.exports = function (controller) {
                 {
                     pattern: "yes|yeh|sure|oui|si",
                     callback: function (response, convo) {
-                        convo.say("Go, get some !");
+                        convo.say("I will ask Neil for a coffee break!");
                         convo.next();
                     },
                 }
                 , {
                     pattern: "no|neh|non|na|birk",
                     callback: function (response, convo) {
-                        convo.say("I am not a big fan neither.");
+                        convo.say("Yea better drink tea aye.");
                         convo.next();
                     },
                 }
                 , {
                     pattern: "cancel|stop|exit",
                     callback: function (response, convo) {
-                        convo.say("Got it, cancelling...");
+                        convo.say("Why??");
                         convo.next();
                     },
                 }
                 , {
                     default: true,
                     callback: function (response, convo) {
-                        convo.say("Sorry, I did not understand.");
+                        convo.say("Sorry, I am too dumb to understand.");
                         convo.repeat();
                         convo.next();
                     }

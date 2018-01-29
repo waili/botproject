@@ -86,7 +86,7 @@ require("fs").readdirSync(normalizedPath).forEach(function (file) {
 
 // Utility to add mentions if Bot is in a 'Group' space
 bot.enrichCommand = function (message, command) {
-    var botName = process.env.BOT_NICKNAME || "BotName";
+    var botName = process.env.BOT_NICKNAME || "care";
     if ("group" == message.roomType) {
         return "`@" + botName + " " + command + "`";
     }

@@ -1,7 +1,7 @@
 //
 // Command: bot commons
 //
-module.exports = function (controller) {
+/*module.exports = function (controller) {
 
     controller.hears(["^\.about", "^\.commons", "^\.bot", "^ping"], 'direct_message,direct_mention', function (bot, message) {
         var metadata = '{\n'
@@ -14,4 +14,4 @@ module.exports = function (controller) {
             + '}\n';
         bot.reply(message, '```json\n' + metadata + '\n```');
     });
-}
+}*/

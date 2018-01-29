@@ -12,13 +12,13 @@ module.exports = function (controller) {
 
             // create a path for when a user says YES
             convo.addMessage({
-                text: 'How wonderful.',
+                text: 'Wonderful yo.',
             }, 'yes_thread');
 
             // create a path for when a user says NO
             // mark the conversation as unsuccessful at the end
             convo.addMessage({
-                text: 'Cheese! It is not for everyone.',
+                text: 'Sad! Cheese is not for everyone I guess.',
                 action: 'stop', // this marks the converation as unsuccessful
             }, 'no_thread');
 
@@ -56,7 +56,7 @@ module.exports = function (controller) {
 
                 if (convo.successful()) {
                     // this still works to send individual replies...
-                    bot.reply(message, 'Let us eat some!');
+                    bot.reply(message, 'Leggo eat some! <@personEmail:esellick@cisco.com|Eve> can also eat cheese right?');
 
                     // and now deliver cheese via tcp/ip...
                 }
